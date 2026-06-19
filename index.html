@@ -1,0 +1,1611 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta -->
+    <title>
+      Suleman Shah | VR Developer & Unity Simulation Specialist | WitShells
+      Studio
+    </title>
+    <meta
+      name="description"
+      content="Syed Suleman Shah — VR developer with 7+ years building military simulations, EdTech VR, Meta Quest apps and real-time multiplayer games. Founder of WitShells Studio, Pakistan."
+    />
+    <meta
+      name="keywords"
+      content="VR developer Pakistan, Unity developer for hire, Meta Quest developer, military VR simulation developer, EdTech VR developer, XR developer freelance, Unity game developer, VR training simulation, WitShells Studio"
+    />
+    <meta name="author" content="Syed Suleman Shah" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://suleman.witshells.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://suleman.witshells.com/" />
+    <meta
+      property="og:title"
+      content="Suleman Shah | VR Developer & Unity Simulation Specialist"
+    />
+    <meta
+      property="og:description"
+      content="7+ years building VR simulations, military training apps, and EdTech experiences. Founder of WitShells Studio."
+    />
+    <meta
+      property="og:image"
+      content="https://suleman.witshells.com/images/suleman.png"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Suleman Shah | VR Developer & Unity Simulation Specialist"
+    />
+    <meta
+      name="twitter:description"
+      content="7+ years building VR simulations, military training apps, and EdTech experiences."
+    />
+    <meta
+      name="twitter:image"
+      content="https://suleman.witshells.com/images/suleman.png"
+    />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Syed Suleman Shah",
+        "jobTitle": "VR Developer & Founder",
+        "worksFor": { "@type": "Organization", "name": "WitShells Studio" },
+        "url": "https://suleman.witshells.com",
+        "sameAs": ["https://www.linkedin.com/in/suleman-shah"],
+        "knowsAbout": [
+          "Unity 3D",
+          "VR Development",
+          "Meta Quest",
+          "Military Simulation",
+          "EdTech VR",
+          "SignalR",
+          "ASP.NET Core"
+        ]
+      }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#eef2ff",
+                100: "#e0e7ff",
+                500: "#6366f1",
+                600: "#4f46e5",
+                700: "#4338ca",
+                900: "#1e1b4b",
+              },
+              surface: "#0d0f1a",
+              card: "#131627",
+              border: "#1e2235",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #0d0f1a;
+        color: #e2e8f0;
+      }
+
+      .glow-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #22c55e;
+        box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+        animation: pulse-glow 2s ease-in-out infinite;
+      }
+      @keyframes pulse-glow {
+        0%,
+        100% {
+          box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+        }
+        50% {
+          box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.1);
+        }
+      }
+
+      .project-card {
+        background: #131627;
+        border: 1px solid #1e2235;
+        border-radius: 16px;
+        transition:
+          border-color 0.2s,
+          transform 0.2s;
+        position: relative;
+        overflow: hidden;
+      }
+      .project-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 16px;
+        background: linear-gradient(
+          135deg,
+          rgba(99, 102, 241, 0.04) 0%,
+          transparent 60%
+        );
+        pointer-events: none;
+      }
+      .project-card:hover {
+        border-color: rgba(99, 102, 241, 0.4);
+        transform: translateY(-2px);
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 11px;
+        font-weight: 500;
+        padding: 3px 10px;
+        border-radius: 999px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+      .tag-military {
+        background: rgba(239, 68, 68, 0.1);
+        color: #fca5a5;
+        border: 1px solid rgba(239, 68, 68, 0.2);
+      }
+      .tag-edtech {
+        background: rgba(34, 197, 94, 0.1);
+        color: #86efac;
+        border: 1px solid rgba(34, 197, 94, 0.2);
+      }
+      .tag-ai {
+        background: rgba(168, 85, 247, 0.1);
+        color: #d8b4fe;
+        border: 1px solid rgba(168, 85, 247, 0.2);
+      }
+      .tag-sport {
+        background: rgba(251, 191, 36, 0.1);
+        color: #fde68a;
+        border: 1px solid rgba(251, 191, 36, 0.2);
+      }
+      .tag-game {
+        background: rgba(59, 130, 246, 0.1);
+        color: #93c5fd;
+        border: 1px solid rgba(59, 130, 246, 0.2);
+      }
+      .tag-meta {
+        background: rgba(20, 184, 166, 0.1);
+        color: #5eead4;
+        border: 1px solid rgba(20, 184, 166, 0.2);
+      }
+      .tag-detective {
+        background: rgba(245, 158, 11, 0.1);
+        color: #fcd34d;
+        border: 1px solid rgba(245, 158, 11, 0.2);
+      }
+
+      .platform-pill {
+        font-size: 11px;
+        font-family: "JetBrains Mono", monospace;
+        padding: 2px 8px;
+        border-radius: 6px;
+        background: #1e2235;
+        color: #94a3b8;
+        border: 1px solid #2a3050;
+      }
+
+      .stat-card {
+        background: #131627;
+        border: 1px solid #1e2235;
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+
+      .package-item {
+        background: #131627;
+        border: 1px solid #1e2235;
+        border-radius: 10px;
+        padding: 14px 16px;
+        transition: border-color 0.2s;
+      }
+      .package-item:hover {
+        border-color: rgba(99, 102, 241, 0.3);
+      }
+
+      .nav-link {
+        color: #94a3b8;
+        font-size: 14px;
+        transition: color 0.15s;
+        text-decoration: none;
+      }
+      .nav-link:hover {
+        color: #e2e8f0;
+      }
+
+      .btn-primary {
+        background: #4f46e5;
+        color: white;
+        padding: 12px 28px;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition:
+          background 0.15s,
+          transform 0.15s;
+      }
+      .btn-primary:hover {
+        background: #4338ca;
+        transform: translateY(-1px);
+      }
+
+      .btn-ghost {
+        color: #94a3b8;
+        padding: 12px 24px;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none;
+        border: 1px solid #1e2235;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition:
+          border-color 0.15s,
+          color 0.15s;
+      }
+      .btn-ghost:hover {
+        border-color: #4f46e5;
+        color: #e2e8f0;
+      }
+
+      .section-label {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #6366f1;
+        margin-bottom: 12px;
+      }
+
+      .timeline-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #4f46e5;
+        flex-shrink: 0;
+        margin-top: 7px;
+      }
+
+      /* Featured card accent */
+      .project-card.featured {
+        border-color: rgba(99, 102, 241, 0.25);
+      }
+
+      .avatar-ring {
+        border: 2px solid #1e2235;
+        border-radius: 50%;
+        padding: 3px;
+      }
+      .avatar-ring img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans antialiased">
+    <!-- NAV -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 border-b border-[#1e2235]"
+      style="background: rgba(13, 15, 26, 0.9); backdrop-filter: blur(12px)"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <a
+          href="#"
+          class="font-mono text-sm font-medium text-white tracking-tight"
+        >
+          suleman<span style="color: #6366f1">.</span>witshells<span
+            style="color: #6366f1"
+            >.</span
+          >com
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#packages" class="nav-link">Packages</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <a
+          href="#contact"
+          class="btn-primary"
+          style="padding: 8px 18px; font-size: 13px"
+          >Hire Me</a
+        >
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section style="padding: 130px 24px 80px">
+      <div class="max-w-6xl mx-auto">
+        <div
+          class="flex flex-col lg:flex-row items-start lg:items-center gap-12"
+        >
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="glow-dot"></div>
+              <span style="font-size: 13px; color: #94a3b8"
+                >Available for new projects</span
+              >
+            </div>
+
+            <h1
+              style="
+                font-size: clamp(36px, 5vw, 58px);
+                font-weight: 700;
+                line-height: 1.1;
+                letter-spacing: -0.03em;
+                color: #f1f5f9;
+                margin-bottom: 20px;
+              "
+            >
+              I build VR worlds<br />
+              <span style="color: #6366f1">that train, teach</span><br />
+              and immerse.
+            </h1>
+
+            <p
+              style="
+                font-size: 16px;
+                line-height: 1.75;
+                color: #94a3b8;
+                max-width: 520px;
+                margin-bottom: 32px;
+              "
+            >
+              Syed Suleman Shah — VR developer and founder of
+              <strong style="color: #e2e8f0">WitShells Studio</strong>. 7+ years
+              shipping Unity simulations, Meta Quest apps, military training
+              systems, and educational VR for clients across Pakistan, Kuwait,
+              Saudi Arabia and beyond.
+            </p>
+
+            <div class="flex flex-wrap gap-4 mb-10">
+              <a href="#projects" class="btn-primary">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="m8 21 4-4 4 4" />
+                  <path d="M12 17V21" />
+                </svg>
+                View Projects
+              </a>
+              <a href="#contact" class="btn-ghost">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  />
+                </svg>
+                Let's Talk
+              </a>
+            </div>
+
+            <!-- Tech stack pills -->
+            <div class="flex flex-wrap gap-2">
+              <span class="platform-pill">Unity 3D</span>
+              <span class="platform-pill">Meta Quest</span>
+              <span class="platform-pill">ARCore</span>
+              <span class="platform-pill">ASP.NET Core</span>
+              <span class="platform-pill">SignalR</span>
+              <span class="platform-pill">WebRTC</span>
+              <span class="platform-pill">React Native</span>
+            </div>
+          </div>
+
+          <!-- Profile -->
+          <div class="flex flex-col items-center gap-6">
+            <div class="avatar-ring" style="width: 220px; height: 220px">
+              <img
+                src="images/suleman.png"
+                alt="Syed Suleman Shah — VR Developer, WitShells Studio"
+              />
+            </div>
+            <div style="text-align: center">
+              <p
+                style="
+                  font-weight: 600;
+                  font-size: 15px;
+                  color: #f1f5f9;
+                  margin-bottom: 2px;
+                "
+              >
+                Syed Suleman Shah
+              </p>
+              <p style="font-size: 13px; color: #94a3b8">
+                Founder & CTO, WitShells Studio
+              </p>
+              <p style="font-size: 12px; color: #64748b; margin-top: 4px">
+                Moro, Sindh, Pakistan 🇵🇰
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAT BAR -->
+    <section style="padding: 0 24px 80px">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="stat-card text-center">
+            <p
+              style="
+                font-size: 36px;
+                font-weight: 700;
+                color: #6366f1;
+                line-height: 1;
+              "
+            >
+              12+
+            </p>
+            <p style="font-size: 13px; color: #94a3b8; margin-top: 6px">
+              VR Projects Shipped
+            </p>
+          </div>
+          <div class="stat-card text-center">
+            <p
+              style="
+                font-size: 36px;
+                font-weight: 700;
+                color: #6366f1;
+                line-height: 1;
+              "
+            >
+              5
+            </p>
+            <p style="font-size: 13px; color: #94a3b8; margin-top: 6px">
+              Countries Served
+            </p>
+          </div>
+          <div class="stat-card text-center">
+            <p
+              style="
+                font-size: 36px;
+                font-weight: 700;
+                color: #6366f1;
+                line-height: 1;
+              "
+            >
+              7+
+            </p>
+            <p style="font-size: 13px; color: #94a3b8; margin-top: 6px">
+              Years in Unity
+            </p>
+          </div>
+          <div class="stat-card text-center">
+            <p
+              style="
+                font-size: 36px;
+                font-weight: 700;
+                color: #6366f1;
+                line-height: 1;
+              "
+            >
+              10+
+            </p>
+            <p style="font-size: 13px; color: #94a3b8; margin-top: 6px">
+              Reusable Packages Built
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" style="padding: 0 24px 100px">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-12">
+          <p class="section-label">Selected Work</p>
+          <h2
+            style="
+              font-size: 32px;
+              font-weight: 700;
+              color: #f1f5f9;
+              letter-spacing: -0.02em;
+            "
+          >
+            Projects that shipped.
+          </h2>
+          <p
+            style="
+              font-size: 15px;
+              color: #94a3b8;
+              margin-top: 8px;
+              max-width: 480px;
+            "
+          >
+            Real clients, real briefs, real deployments. From defense facilities
+            to Kuwait universities.
+          </p>
+        </div>
+
+        <!-- FEATURED: SANDBOX -->
+        <div class="project-card featured mb-6 p-6 md:p-8">
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="flex-1">
+              <div class="flex flex-wrap items-center gap-2 mb-4">
+                <span class="tag tag-military">Military</span>
+                <span class="platform-pill">PC VR</span>
+                <span class="platform-pill">HTC Vive</span>
+                <span
+                  style="
+                    font-size: 11px;
+                    color: #4f46e5;
+                    font-weight: 500;
+                    padding: 3px 10px;
+                    border-radius: 999px;
+                    background: rgba(99, 102, 241, 0.1);
+                    border: 1px solid rgba(99, 102, 241, 0.2);
+                  "
+                  >★ Featured</span
+                >
+              </div>
+              <h3
+                style="
+                  font-size: 22px;
+                  font-weight: 700;
+                  color: #f1f5f9;
+                  margin-bottom: 8px;
+                "
+              >
+                SANDBOX — Military Tactical VR Simulation
+              </h3>
+              <p
+                style="
+                  font-size: 15px;
+                  color: #94a3b8;
+                  line-height: 1.7;
+                  margin-bottom: 16px;
+                "
+              >
+                Custom-built VR tactical training simulation for a Pakistani
+                defense client. Real-time multiplayer scenario planning, terrain
+                navigation, and mission briefing systems inside an immersive 3D
+                environment. Delivered under strict operational requirements.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="platform-pill">Unity 3D</span>
+                <span class="platform-pill">Real-time Multiplayer</span>
+                <span class="platform-pill">Tactical Simulation</span>
+                <span class="platform-pill">3D Terrain</span>
+              </div>
+              <a
+                href="blog/sandbox-military-vr-simulation.html"
+                class="btn-primary"
+                style="font-size: 13px; padding: 10px 20px"
+              >
+                Read Case Study →
+              </a>
+            </div>
+            <div
+              style="
+                width: 100%;
+                max-width: 280px;
+                background: #1e2235;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 160px;
+                flex-shrink: 0;
+              "
+            >
+              <div style="text-align: center; color: #4f46e5">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  style="margin: 0 auto 8px"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polygon points="10 8 16 12 10 16 10 8" />
+                </svg>
+                <p style="font-size: 12px; color: #64748b">
+                  Case study video available
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT GRID -->
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Climate Change VR -->
+          <div class="project-card p-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="tag tag-edtech">EdTech VR</span>
+              <span class="platform-pill">Meta Quest</span>
+            </div>
+            <h3
+              style="
+                font-size: 18px;
+                font-weight: 600;
+                color: #f1f5f9;
+                margin-bottom: 8px;
+              "
+            >
+              Climate Change VR Experience
+            </h3>
+            <p
+              style="
+                font-size: 14px;
+                color: #94a3b8;
+                line-height: 1.7;
+                margin-bottom: 16px;
+              "
+            >
+              Immersive educational VR module for Kuwait University exploring
+              climate science through interactive environments. Second project
+              with Dr. Huda — delivered 2026. Most polished academic VR I've
+              shipped.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="platform-pill">Unity 3D</span>
+              <span class="platform-pill">Kuwait University</span>
+            </div>
+            <a
+              href="blog/climate-change-vr-kuwait-university.html"
+              style="
+                font-size: 13px;
+                color: #6366f1;
+                font-weight: 500;
+                text-decoration: none;
+              "
+              >Read Case Study →</a
+            >
+          </div>
+
+          <!-- Egypt History VR -->
+          <div class="project-card p-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="tag tag-edtech">EdTech VR</span>
+              <span class="platform-pill">Meta Quest</span>
+            </div>
+            <h3
+              style="
+                font-size: 18px;
+                font-weight: 600;
+                color: #f1f5f9;
+                margin-bottom: 8px;
+              "
+            >
+              Egypt History — Educational VR Module
+            </h3>
+            <p
+              style="
+                font-size: 14px;
+                color: #94a3b8;
+                line-height: 1.7;
+                margin-bottom: 16px;
+              "
+            >
+              VR history experience for Kuwait University. Students explore
+              ancient Egypt through an interactive, narrated VR environment.
+              Built for Dr. Huda, Assistant Professor — first of two successful
+              engagements.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="platform-pill">Unity 3D</span>
+              <span class="platform-pill">Academic Client</span>
+            </div>
+            <a
+              href="blog/egypt-history-vr-kuwait-university.html"
+              style="
+                font-size: 13px;
+                color: #6366f1;
+                font-weight: 500;
+                text-decoration: none;
+              "
+              >Read Case Study →</a
+            >
+          </div>
+
+          <!-- VR Rehearsal -->
+          <div class="project-card p-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="tag tag-ai">AI + VR</span>
+              <span class="platform-pill">Meta Quest</span>
+            </div>
+            <h3
+              style="
+                font-size: 18px;
+                font-weight: 600;
+                color: #f1f5f9;
+                margin-bottom: 8px;
+              "
+            >
+              VR Rehearsal — AI Speech Training App
+            </h3>
+            <p
+              style="
+                font-size: 14px;
+                color: #94a3b8;
+                line-height: 1.7;
+                margin-bottom: 16px;
+              "
+            >
+              Practice public speaking in front of a virtual audience.
+              AI-powered speech analysis tracks pace, filler words, confidence
+              markers and generates improvement reports. Real-time feedback
+              inside VR.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="platform-pill">AI Analysis</span>
+              <span class="platform-pill">Virtual Audience</span>
+            </div>
+            <a
+              href="blog/vr-rehearsal-ai-speech-training.html"
+              style="
+                font-size: 13px;
+                color: #6366f1;
+                font-weight: 500;
+                text-decoration: none;
+              "
+              >Read Case Study →</a
+            >
+          </div>
+
+          <!-- Shuffleboard -->
+          <div class="project-card p-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="tag tag-sport">Sports Tech</span>
+              <span class="platform-pill">PC</span>
+              <span class="platform-pill">Sensor Hardware</span>
+            </div>
+            <h3
+              style="
+                font-size: 18px;
+                font-weight: 600;
+                color: #f1f5f9;
+                margin-bottom: 8px;
+              "
+            >
+              Shuffleboard Simulator — Sensor-Based Arcade
+            </h3>
+            <p
+              style="
+                font-size: 14px;
+                color: #94a3b8;
+                line-height: 1.7;
+                margin-bottom: 16px;
+              "
+            >
+              Camera sensor integration tracks real shuffleboard puck movement
+              in real time. Unity simulation mirrors physical gameplay — scores,
+              turns, networking. Subcontracted enterprise build with full team
+              collaboration.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="platform-pill">SignalR</span>
+              <span class="platform-pill">Real-Time Networking</span>
+            </div>
+            <a
+              href="blog/shuffleboard-simulator-sensor-unity.html"
+              style="
+                font-size: 13px;
+                color: #6366f1;
+                font-weight: 500;
+                text-decoration: none;
+              "
+              >Read Case Study →</a
+            >
+          </div>
+
+          <!-- Sportopia -->
+          <div class="project-card p-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="tag tag-meta">Metaverse</span>
+              <span class="platform-pill">PC VR</span>
+              <span class="platform-pill">Saudi Arabia</span>
+            </div>
+            <h3
+              style="
+                font-size: 18px;
+                font-weight: 600;
+                color: #f1f5f9;
+                margin-bottom: 8px;
+              "
+            >
+              Sportopia — Saudi Metaverse Module
+            </h3>
+            <p
+              style="
+                font-size: 14px;
+                color: #94a3b8;
+                line-height: 1.7;
+                margin-bottom: 16px;
+              "
+            >
+              Subcontracted module from a large-scale Saudi Arabia metaverse
+              project. 4 interactive scenes, full UI/UX integration, dialog
+              system, and a playable mini soccer game — all built within a
+              structured team delivery pipeline.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="platform-pill">Dialog System</span>
+              <span class="platform-pill">Mini Game</span>
+            </div>
+            <a
+              href="blog/sportopia-saudi-metaverse-module.html"
+              style="
+                font-size: 13px;
+                color: #6366f1;
+                font-weight: 500;
+                text-decoration: none;
+              "
+              >Read Case Study →</a
+            >
+          </div>
+
+          <!-- I'm Sure Lock -->
+          <div class="project-card p-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="tag tag-detective">Detective VR</span>
+              <span class="platform-pill">Meta Quest</span>
+            </div>
+            <h3
+              style="
+                font-size: 18px;
+                font-weight: 600;
+                color: #f1f5f9;
+                margin-bottom: 8px;
+              "
+            >
+              I'm Sure Lock — Detective VR Game
+            </h3>
+            <p
+              style="
+                font-size: 14px;
+                color: #94a3b8;
+                line-height: 1.7;
+                margin-bottom: 16px;
+              "
+            >
+              First-person detective VR game with investigation mechanics,
+              environmental storytelling, and puzzle solving. Demonstrates
+              consumer VR product design alongside enterprise simulation work.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="platform-pill">Unity 3D</span>
+              <span class="platform-pill">Puzzle Design</span>
+            </div>
+            <a
+              href="blog/im-sure-lock-detective-vr-game.html"
+              style="
+                font-size: 13px;
+                color: #6366f1;
+                font-weight: 500;
+                text-decoration: none;
+              "
+              >Read Case Study →</a
+            >
+          </div>
+
+          <!-- Marduga -->
+          <div class="project-card p-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="tag tag-game">Game Jam</span>
+              <span class="platform-pill">WebGL</span>
+              <span class="platform-pill">Android</span>
+            </div>
+            <h3
+              style="
+                font-size: 18px;
+                font-weight: 600;
+                color: #f1f5f9;
+                margin-bottom: 8px;
+              "
+            >
+              Marduga — Multiplayer Vehicle Combat
+            </h3>
+            <p
+              style="
+                font-size: 14px;
+                color: #94a3b8;
+                line-height: 1.7;
+                margin-bottom: 16px;
+              "
+            >
+              Built in 20 days for the Wavedash game jam (Y Combinator-backed
+              gaming platform). Multiplayer vehicle combat — shipped on Play
+              Store and Wavedash. Proof that solo dev can ship fast under
+              pressure.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="platform-pill">20-Day Build</span>
+              <span class="platform-pill">Wavedash</span>
+            </div>
+            <a
+              href="blog/marduga-game-jam-wavedash.html"
+              style="
+                font-size: 13px;
+                color: #6366f1;
+                font-weight: 500;
+                text-decoration: none;
+              "
+              >Read Case Study →</a
+            >
+          </div>
+
+          <!-- Escape Room -->
+          <div class="project-card p-6">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="tag tag-detective">Early Work</span>
+              <span class="platform-pill">PC VR</span>
+            </div>
+            <h3
+              style="
+                font-size: 18px;
+                font-weight: 600;
+                color: #f1f5f9;
+                margin-bottom: 8px;
+              "
+            >
+              Escape Room — Collaborative VR
+            </h3>
+            <p
+              style="
+                font-size: 14px;
+                color: #94a3b8;
+                line-height: 1.7;
+                margin-bottom: 16px;
+              "
+            >
+              One of my earliest VR client projects. Partnered with 3D artist
+              Fahad to design and build a full escape room VR experience. Where
+              the journey into XR began.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="platform-pill">Unity 3D</span>
+              <span class="platform-pill">Team Project</span>
+            </div>
+            <a
+              href="blog/escape-room-vr-early-project.html"
+              style="
+                font-size: 13px;
+                color: #6366f1;
+                font-weight: 500;
+                text-decoration: none;
+              "
+              >Read more →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES / ARSENAL -->
+    <section id="packages" style="padding: 0 24px 100px">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-10">
+          <p class="section-label">Technical Arsenal</p>
+          <h2
+            style="
+              font-size: 32px;
+              font-weight: 700;
+              color: #f1f5f9;
+              letter-spacing: -0.02em;
+            "
+          >
+            Reusable packages I ship with.
+          </h2>
+          <p
+            style="
+              font-size: 15px;
+              color: #94a3b8;
+              margin-top: 8px;
+              max-width: 520px;
+            "
+          >
+            Built over 7 years of real projects. These tools cut my delivery
+            time in half — and prove I think in systems, not just features.
+          </p>
+        </div>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+          <div class="package-item">
+            <p
+              style="
+                font-weight: 600;
+                font-size: 14px;
+                color: #e2e8f0;
+                margin-bottom: 4px;
+              "
+            >
+              WitMultiplayer
+            </p>
+            <p style="font-size: 13px; color: #64748b">
+              Plug-and-play multiplayer foundation — lobby, matchmaking, sync
+            </p>
+          </div>
+          <div class="package-item">
+            <p
+              style="
+                font-weight: 600;
+                font-size: 14px;
+                color: #e2e8f0;
+                margin-bottom: 4px;
+              "
+            >
+              WebRTC P2P
+            </p>
+            <p style="font-size: 13px; color: #64748b">
+              Peer-to-peer communication layer for Unity, no relay required
+            </p>
+          </div>
+          <div class="package-item">
+            <p
+              style="
+                font-weight: 600;
+                font-size: 14px;
+                color: #e2e8f0;
+                margin-bottom: 4px;
+              "
+            >
+              VR IK Motion Rig
+            </p>
+            <p style="font-size: 13px; color: #64748b">
+              One-click avatar IK integration for any humanoid in VR
+            </p>
+          </div>
+          <div class="package-item">
+            <p
+              style="
+                font-weight: 600;
+                font-size: 14px;
+                color: #e2e8f0;
+                margin-bottom: 4px;
+              "
+            >
+              Google Maps 3D View
+            </p>
+            <p style="font-size: 13px; color: #64748b">
+              Real-world tile fetching, offline bounding box, 3D map markers
+              inside Unity
+            </p>
+          </div>
+          <div class="package-item">
+            <p
+              style="
+                font-weight: 600;
+                font-size: 14px;
+                color: #e2e8f0;
+                margin-bottom: 4px;
+              "
+            >
+              Third Person Controller
+            </p>
+            <p style="font-size: 13px; color: #64748b">
+              Attach full TPS controls to any humanoid GameObject in one click
+            </p>
+          </div>
+          <div class="package-item">
+            <p
+              style="
+                font-weight: 600;
+                font-size: 14px;
+                color: #e2e8f0;
+                margin-bottom: 4px;
+              "
+            >
+              Thread Manager
+            </p>
+            <p style="font-size: 13px; color: #64748b">
+              Background jobs without boilerplate — async task runner for Unity
+            </p>
+          </div>
+          <div class="package-item">
+            <p
+              style="
+                font-weight: 600;
+                font-size: 14px;
+                color: #e2e8f0;
+                margin-bottom: 4px;
+              "
+            >
+              UDP Broadcast
+            </p>
+            <p style="font-size: 13px; color: #64748b">
+              Local network discovery and fast UDP communication layer
+            </p>
+          </div>
+          <div class="package-item">
+            <p
+              style="
+                font-weight: 600;
+                font-size: 14px;
+                color: #e2e8f0;
+                margin-bottom: 4px;
+              "
+            >
+              Trajectory Shooting
+            </p>
+            <p style="font-size: 13px; color: #64748b">
+              Predictive arc visualization for projectile-based gameplay
+            </p>
+          </div>
+          <div class="package-item">
+            <p
+              style="
+                font-weight: 600;
+                font-size: 14px;
+                color: #e2e8f0;
+                margin-bottom: 4px;
+              "
+            >
+              API Integration Templates
+            </p>
+            <p style="font-size: 13px; color: #64748b">
+              REST + auth boilerplate for quick backend wiring inside Unity
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEACHING -->
+    <section style="padding: 0 24px 100px">
+      <div class="max-w-6xl mx-auto">
+        <div
+          style="
+            background: #131627;
+            border: 1px solid #1e2235;
+            border-radius: 16px;
+            padding: 40px 48px;
+          "
+          class="flex flex-col md:flex-row gap-10 items-start"
+        >
+          <div class="flex-1">
+            <p class="section-label">Teaching</p>
+            <h2
+              style="
+                font-size: 26px;
+                font-weight: 700;
+                color: #f1f5f9;
+                letter-spacing: -0.02em;
+                margin-bottom: 12px;
+              "
+            >
+              Unity Mobile Game Development — WitShells Academy
+            </h2>
+            <p
+              style="
+                font-size: 15px;
+                color: #94a3b8;
+                line-height: 1.75;
+                margin-bottom: 20px;
+              "
+            >
+              Delivered a 16-week Unity/C# curriculum across 2 student batches.
+              Philosophy:
+              <em style="color: #e2e8f0">"real world first, Unity second."</em>
+              Students shipped 3 real mini-games as milestones — no toy
+              projects, no tutorials that collect dust.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <div
+                style="
+                  text-align: center;
+                  background: #1e2235;
+                  padding: 12px 20px;
+                  border-radius: 10px;
+                "
+              >
+                <p style="font-size: 22px; font-weight: 700; color: #6366f1">
+                  2
+                </p>
+                <p style="font-size: 12px; color: #94a3b8">Batches</p>
+              </div>
+              <div
+                style="
+                  text-align: center;
+                  background: #1e2235;
+                  padding: 12px 20px;
+                  border-radius: 10px;
+                "
+              >
+                <p style="font-size: 22px; font-weight: 700; color: #6366f1">
+                  16
+                </p>
+                <p style="font-size: 12px; color: #94a3b8">Weeks</p>
+              </div>
+              <div
+                style="
+                  text-align: center;
+                  background: #1e2235;
+                  padding: 12px 20px;
+                  border-radius: 10px;
+                "
+              >
+                <p style="font-size: 22px; font-weight: 700; color: #6366f1">
+                  3
+                </p>
+                <p style="font-size: 12px; color: #94a3b8">
+                  Shipped Games / Student
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              width: 1px;
+              background: #1e2235;
+              align-self: stretch;
+              display: none;
+            "
+            class="md:block"
+          ></div>
+          <div style="max-width: 240px">
+            <p style="font-size: 13px; color: #64748b; margin-bottom: 12px">
+              Topics covered
+            </p>
+            <div class="flex flex-col gap-2">
+              <div class="flex items-start gap-2">
+                <div class="timeline-dot"></div>
+                <p style="font-size: 13px; color: #94a3b8">
+                  C# fundamentals through game context
+                </p>
+              </div>
+              <div class="flex items-start gap-2">
+                <div class="timeline-dot"></div>
+                <p style="font-size: 13px; color: #94a3b8">
+                  Physics, collisions, 2D/3D game loops
+                </p>
+              </div>
+              <div class="flex items-start gap-2">
+                <div class="timeline-dot"></div>
+                <p style="font-size: 13px; color: #94a3b8">
+                  Mobile optimization & UI/UX
+                </p>
+              </div>
+              <div class="flex items-start gap-2">
+                <div class="timeline-dot"></div>
+                <p style="font-size: 13px; color: #94a3b8">
+                  Play Store publishing pipeline
+                </p>
+              </div>
+              <div class="flex items-start gap-2">
+                <div class="timeline-dot"></div>
+                <p style="font-size: 13px; color: #94a3b8">
+                  Real project delivery mindset
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" style="padding: 0 24px 100px">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex items-end justify-between mb-10">
+          <div>
+            <p class="section-label">Blog</p>
+            <h2
+              style="
+                font-size: 32px;
+                font-weight: 700;
+                color: #f1f5f9;
+                letter-spacing: -0.02em;
+              "
+            >
+              From the build log.
+            </h2>
+          </div>
+          <a
+            href="blog/"
+            class="btn-ghost"
+            style="font-size: 13px; padding: 8px 16px"
+            >All Articles →</a
+          >
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5">
+          <a
+            href="blog/sandbox-military-vr-simulation.html"
+            style="text-decoration: none"
+          >
+            <div class="project-card p-5 h-full">
+              <span
+                class="tag tag-military"
+                style="margin-bottom: 12px; display: inline-flex"
+                >Military</span
+              >
+              <h3
+                style="
+                  font-size: 15px;
+                  font-weight: 600;
+                  color: #f1f5f9;
+                  margin-bottom: 8px;
+                  line-height: 1.4;
+                "
+              >
+                Building a Military Tactical VR Simulation in Unity
+              </h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.6">
+                How a defense client approached WitShells, the brief, the build,
+                and what I learned about high-stakes delivery.
+              </p>
+              <p
+                style="
+                  font-size: 12px;
+                  color: #4f46e5;
+                  margin-top: 12px;
+                  font-weight: 500;
+                "
+              >
+                Read →
+              </p>
+            </div>
+          </a>
+          <a
+            href="blog/climate-change-vr-kuwait-university.html"
+            style="text-decoration: none"
+          >
+            <div class="project-card p-5 h-full">
+              <span
+                class="tag tag-edtech"
+                style="margin-bottom: 12px; display: inline-flex"
+                >EdTech</span
+              >
+              <h3
+                style="
+                  font-size: 15px;
+                  font-weight: 600;
+                  color: #f1f5f9;
+                  margin-bottom: 8px;
+                  line-height: 1.4;
+                "
+              >
+                VR for University Education: Climate Change Module
+              </h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.6">
+                Building an immersive science experience for Kuwait University —
+                technical decisions, scope management, and repeat client trust.
+              </p>
+              <p
+                style="
+                  font-size: 12px;
+                  color: #4f46e5;
+                  margin-top: 12px;
+                  font-weight: 500;
+                "
+              >
+                Read →
+              </p>
+            </div>
+          </a>
+          <a
+            href="blog/cricket-vr-prototype-2-days.html"
+            style="text-decoration: none"
+          >
+            <div class="project-card p-5 h-full">
+              <span
+                class="tag tag-game"
+                style="margin-bottom: 12px; display: inline-flex"
+                >Devlog</span
+              >
+              <h3
+                style="
+                  font-size: 15px;
+                  font-weight: 600;
+                  color: #f1f5f9;
+                  margin-bottom: 8px;
+                  line-height: 1.4;
+                "
+              >
+                I Built a Cricket VR Experience in 2 Days — Here's What I
+                Learned
+              </h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.6">
+                A weekend prototype. No client, no deadline. Just rapid
+                experimentation and honest technical notes.
+              </p>
+              <p
+                style="
+                  font-size: 12px;
+                  color: #4f46e5;
+                  margin-top: 12px;
+                  font-weight: 500;
+                "
+              >
+                Read →
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="padding: 0 24px 120px">
+      <div class="max-w-6xl mx-auto">
+        <div
+          style="
+            background: #131627;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 20px;
+            padding: 60px 48px;
+            text-align: center;
+          "
+        >
+          <div class="glow-dot" style="margin: 0 auto 20px"></div>
+          <h2
+            style="
+              font-size: 36px;
+              font-weight: 700;
+              color: #f1f5f9;
+              letter-spacing: -0.02em;
+              margin-bottom: 12px;
+            "
+          >
+            Got a VR project in mind?
+          </h2>
+          <p
+            style="
+              font-size: 16px;
+              color: #94a3b8;
+              max-width: 460px;
+              margin: 0 auto 32px;
+              line-height: 1.75;
+            "
+          >
+            Whether it's a simulation, training system, or educational
+            experience — I'd love to hear the brief. Drop me a message and I'll
+            respond within 24 hours.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="mailto:hello@witshells.com" class="btn-primary">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              Email Me
+            </a>
+            <a
+              href="https://www.linkedin.com/in/suleman-shah"
+              target="_blank"
+              rel="noopener"
+              class="btn-ghost"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn
+            </a>
+            <a
+              href="https://witshells.com"
+              target="_blank"
+              rel="noopener"
+              class="btn-ghost"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+              WitShells Studio
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="border-top: 1px solid #1e2235; padding: 32px 24px">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <p style="font-size: 13px; color: #64748b">
+          © 2026 Syed Suleman Shah · WitShells Studio (SMC-Pvt) Ltd · Moro,
+          Sindh, Pakistan
+        </p>
+        <div class="flex gap-6">
+          <a href="#projects" class="nav-link" style="font-size: 13px"
+            >Projects</a
+          >
+          <a href="#blog" class="nav-link" style="font-size: 13px">Blog</a>
+          <a
+            href="https://witshells.com"
+            target="_blank"
+            class="nav-link"
+            style="font-size: 13px"
+            >Studio</a
+          >
+          <a
+            href="mailto:hello@witshells.com"
+            class="nav-link"
+            style="font-size: 13px"
+            >Email</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
