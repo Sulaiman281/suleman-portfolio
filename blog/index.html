@@ -1,0 +1,71 @@
+---
+layout: default
+title: Blog
+description: Build logs, case studies and technical notes from WitShells Studio.
+---
+
+<section style="max-width: 1100px; margin: 0 auto; padding: 60px 24px 120px">
+  <div style="margin-bottom: 48px">
+    <p class="section-label">Build Log</p>
+    <h1 class="section-title">From the build log.</h1>
+    <p
+      style="
+        font-size: 14px;
+        color: var(--t2);
+        margin-top: 8px;
+        max-width: 480px;
+      "
+    >
+      Case studies, devlogs and technical notes from 7+ years of Unity projects.
+    </p>
+  </div>
+
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    "
+  >
+    {% for post in site.posts %}
+    <a href="{{ post.url }}" style="text-decoration: none">
+      <div class="card" style="padding: 24px; height: 100%">
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px"
+        >
+          {% for tag in post.tags %}
+          <span class="tag tag-{{ tag | downcase | replace: ' ', '-' }}"
+            >{{ tag }}</span
+          >
+          {% endfor %}
+          <span class="pill">{{ post.date | date: "%b %d, %Y" }}</span>
+        </div>
+        <h2
+          style="
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--t1);
+            margin-bottom: 8px;
+            line-height: 1.5;
+          "
+        >
+          {{ post.title }}
+        </h2>
+        <p style="font-size: 13px; color: var(--t3); line-height: 1.7; flex: 1">
+          {{ post.description }}
+        </p>
+        <p
+          style="
+            font-size: 13px;
+            color: var(--gold);
+            margin-top: 16px;
+            font-weight: 600;
+          "
+        >
+          Read →
+        </p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>

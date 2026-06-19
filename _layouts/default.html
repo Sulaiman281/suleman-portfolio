@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} | Syed Suleman Shah</title>
+    <meta
+      name="description"
+      content="{{ page.description | default: site.description }}"
+    />
+    <link rel="canonical" href="{{ page.url | prepend: site.url }}" />
+
+    <!-- Same fonts + Tailwind as your portfolio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    {% seo %}
+
+    <style>
+      /* ── paste your full :root + body + .nav + .card + all CSS vars here ── */
+      /* (copy the entire <style> block from your index.html) */
+    </style>
+  </head>
+  <body>
+    {% include nav.html %}
+
+    <main style="padding-top: 80px">{{ content }}</main>
+
+    {% include footer.html %}
+
+    <!-- Star cursor script — paste your full script block here -->
+  </body>
+</html>

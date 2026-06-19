@@ -1,0 +1,183 @@
+---
+layout: default
+---
+
+<article style="max-width: 720px; margin: 0 auto; padding: 60px 24px 120px">
+  <!-- Back link -->
+  <a
+    href="/blog/"
+    style="
+      font-size: 13px;
+      color: var(--gold);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 32px;
+    "
+  >
+    ← All Articles
+  </a>
+
+  <!-- Tags row -->
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px">
+    {% if page.tags %} {% for tag in page.tags %}
+    <span class="tag tag-{{ tag | downcase | replace: ' ', '-' }}"
+      >{{ tag }}</span
+    >
+    {% endfor %} {% endif %}
+    <span class="pill">{{ page.date | date: "%B %d, %Y" }}</span>
+  </div>
+
+  <!-- Title -->
+  <h1
+    style="
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 700;
+      color: var(--t1);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    "
+  >
+    {{ page.title }}
+  </h1>
+
+  <!-- Description -->
+  {% if page.description %}
+  <p
+    style="
+      font-size: 16px;
+      color: var(--t2);
+      line-height: 1.8;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+    "
+  >
+    {{ page.description }}
+  </p>
+  {% endif %}
+
+  <!-- Post body -->
+  <div class="post-body">{{ content }}</div>
+
+  <!-- CTA at the bottom -->
+  <div
+    style="
+      margin-top: 64px;
+      padding: 32px;
+      background: var(--card);
+      border: 1px solid var(--gold-border);
+      border-radius: 16px;
+      text-align: center;
+    "
+  >
+    <p
+      style="
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--t1);
+        margin-bottom: 8px;
+      "
+    >
+      Got a similar project in mind?
+    </p>
+    <p style="font-size: 13px; color: var(--t2); margin-bottom: 20px">
+      Fastest reply is on WhatsApp.
+    </p>
+    <a
+      href="https://wa.me/923093023289"
+      target="_blank"
+      class="btn-primary"
+      style="font-size: 13px; padding: 10px 22px"
+      >WhatsApp Me →</a
+    >
+  </div>
+</article>
+
+<style>
+  /* Markdown body styling — matches your dark theme */
+  .post-body h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--t1);
+    letter-spacing: -0.02em;
+    margin: 40px 0 14px;
+  }
+  .post-body h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--t1);
+    margin: 28px 0 10px;
+  }
+  .post-body p {
+    font-size: 15px;
+    color: var(--t2);
+    line-height: 1.85;
+    margin-bottom: 18px;
+  }
+  .post-body ul,
+  .post-body ol {
+    padding-left: 20px;
+    margin-bottom: 18px;
+  }
+  .post-body li {
+    font-size: 15px;
+    color: var(--t2);
+    line-height: 1.8;
+    margin-bottom: 6px;
+  }
+  .post-body strong {
+    color: var(--t1);
+    font-weight: 600;
+  }
+  .post-body a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+  .post-body a:hover {
+    text-decoration: underline;
+  }
+  .post-body code {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    background: var(--card2);
+    padding: 2px 7px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    color: var(--t1);
+  }
+  .post-body pre {
+    background: var(--card2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    overflow-x: auto;
+    margin-bottom: 22px;
+  }
+  .post-body pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 13px;
+  }
+  .post-body blockquote {
+    border-left: 3px solid var(--gold);
+    padding: 4px 0 4px 20px;
+    margin: 24px 0;
+    color: var(--t2);
+    font-style: italic;
+  }
+  .post-body img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    margin: 20px 0;
+  }
+  .post-body hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 36px 0;
+  }
+</style>

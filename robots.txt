@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suleman.witshells.com/sitemap.xml
