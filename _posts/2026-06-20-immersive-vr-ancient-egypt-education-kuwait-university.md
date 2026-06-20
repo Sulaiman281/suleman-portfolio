@@ -5,7 +5,7 @@ tags: [VR Education, EdTech, Ancient Egypt VR, Immersive Learning, Unity, Educat
 date: 2026-06-19
 ---
 
-![students-exploring-class-room](image.png)
+![students-exploring-class-room](/images/image.png)
 
 *Ancient Egyptian civilization. Seventh grade students. Meta Quest 2 headsets. And eventually — a peer-reviewed journal.*
 
@@ -70,7 +70,7 @@ We built this project knowing that. The goal was never to make a flashy tech dem
 
 ### The Intelligent Robot Guide
 
-![intelligent-robot-guide](image-1.png)
+![intelligent-robot-guide](/images/image-1.png)
 
 Before anything else — the robot.
 
@@ -84,7 +84,7 @@ Each student also receives a **virtual tablet** they carry throughout the field 
 
 ### Lesson 1 — Introduction to Ancient Egypt
 
-![robot-guide](image-3.png)
+![robot-guide](/images/image-3.png)
 
 The first magic door opens into Ancient Egypt itself.
 
@@ -102,7 +102,7 @@ Students spend roughly 15 minutes in these spaces — gathering facts like const
 
 ### Lesson 2 — Economic Life
 
-![exploring-ancient-egypt-vr](image-2.png)
+![exploring-ancient-egypt-vr](/images/image-2.png)
 
 The second door opens into a landscape of pyramids and economic activity.
 
@@ -126,7 +126,7 @@ Each lesson is its own scene behind its own magic door. The virtual classroom is
 
 ### The Final Lesson — Classification & 3D Model Building
 
-![final-lab-egypt-models](image-4.png)
+![final-lab-egypt-models](/images/image-4.png)
 
 The last lesson is the most ambitious — and the one I think demonstrates what collaborative VR can actually do.
 
