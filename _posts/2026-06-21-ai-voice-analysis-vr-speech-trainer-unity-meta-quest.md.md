@@ -163,7 +163,7 @@ The research process alone — testing Whisper, evaluating multiple APIs, landin
 
 By late 2024 I had developed the skills to build custom backends in ASP.NET Core — and started creating my own API integration architecture that I've since used across six different projects.
 
-That work lives here: [WitClientApi — Reusable Unity API Integration Package](https://github.com/Sulaiman281/Reusable-Unity-Scripts-Packages.git?path=Assets/WitShells/WitClientApi)
+That work lives here: [WitClientApi — Reusable Unity API Integration Package](https://github.com/syed-suleman-shah-engineer/Reusable-Unity-Scripts-Packages.git?path=Assets/WitShells/WitClientApi)
 
 I'll write a full breakdown of that package in the next post — how it works, what it solves, and why I built it instead of using existing solutions.
 

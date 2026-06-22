@@ -195,7 +195,7 @@ Override the manager class. Assign your `AuthService`. Assign your `ITokenStorag
 
 To run WitClientApi you need two other packages from the same repository. Both are free and public.
 
-**[Design Patterns Package](https://github.com/Sulaiman281/Reusable-Unity 3D-Scripts-Packages)**
+**[Design Patterns Package](https://github.com/syed-suleman-shah-engineer/Reusable-Unity 3D-Scripts-Packages)**
 Provides the singleton pattern the manager uses, plus a collection of other reusable patterns I reach for constantly in Unity projects. The singleton implementation here is clean — no `DontDestroyOnLoad` abuse, no static field nightmares.
 
 **ThreadManager Package**
@@ -219,7 +219,7 @@ It grew from real problems. Not from designing a framework in the abstract.
 
 The package is public on GitHub:
 
-**[WitClientApi — Reusable Unity 3D API Integration](https://github.com/Sulaiman281/Reusable-Unity-Scripts-Packages.git?path=Assets/WitShells/WitClientApi)**
+**[WitClientApi — Reusable Unity 3D API Integration](https://github.com/syed-suleman-shah-engineer/Reusable-Unity-Scripts-Packages.git?path=Assets/WitShells/WitClientApi)**
 
 Add it via Unity 3D Package Manager using the Git URL. Install the Design Patterns and ThreadManager packages from the same repository. Create your ApiConfig ScriptableObject. Drop your Swagger JSON into Resources. Add WitClientManager to your scene.
 
