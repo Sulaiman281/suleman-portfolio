@@ -1,7 +1,7 @@
 title: "Syed Suleman Shah — Dev Blog"
 description: "Build logs, case studies, and Unity dev notes from WitShells Studio."
 url: "https://suleman.witshells.com"
-baseurl: "/blog"
+baseurl: ""
 
 # Build
 markdown: kramdown
